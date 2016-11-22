@@ -10,7 +10,8 @@ location[6]=["林內","石榴","斗六","斗南","石龜"];
 location[7]=["大林","民雄","嘉北","嘉義","水上","南靖"];
 location[8]=["後壁","新營","柳營","林鳳營","隆田","拔林","善化","南科","新市","永康","大橋","台南","保安","仁德","中洲"];
 location[9]=["大湖","路竹","岡山","橋頭","楠梓","新左營","左營","高雄","鳳山","後庄","九曲堂"];
-location[10]=["六塊厝","屏東"];
+location[10]=["六塊厝","屏東","歸來","麟洛","西勢","竹田","潮州","崁頂","南州","鎮安","林邊","佳冬","東海","枋寮","加祿","內獅","枋山"];
+location[11]=["古莊","大武","瀧溪","金崙","太麻里","知本","康樂","臺東"];
 
 var Data=[];
 Data.push({name:'基隆',km:0.0,sid:1001});
@@ -110,6 +111,31 @@ Data.push({name:'後庄',km:409.3,sid:1403});
 Data.push({name:'九曲堂',km:413.6,sid:1404});
 Data.push({name:'六塊厝',km:418.6,sid:1405});
 Data.push({name:'屏東',km:420.8,sid:1406});
+Data.push({name:'歸來',km:423.4,sid:1407});
+Data.push({name:'麟洛',km:425.7,sid:1408});
+Data.push({name:'西勢',km:428.1,sid:1409});
+Data.push({name:'竹田',km:431.8,sid:1410});
+Data.push({name:'潮州',km:435.9,sid:1411});
+Data.push({name:'崁頂',km:440.7,sid:1412});
+Data.push({name:'南州',km:443.1,sid:1413});
+Data.push({name:'鎮安',km:446.7,sid:1414});
+Data.push({name:'林邊',km:449.9,sid:1415});
+Data.push({name:'佳冬',km:453.9,sid:1416});
+Data.push({name:'東海',km:457.0,sid:1417});
+Data.push({name:'枋寮',km:461.1,sid:1418});
+Data.push({name:'加祿',km:466.4,sid:1502});
+Data.push({name:'內獅',km:469.8,sid:1503});
+Data.push({name:'枋山',km:474.7,sid:1504});
+Data.push({name:'古莊',km:501.6,sid:1507});
+Data.push({name:'大武',km:504.9,sid:1508});
+Data.push({name:'瀧溪',km:516.6,sid:1510});
+Data.push({name:'金崙',km:525.0,sid:1512});
+Data.push({name:'太麻里',km:536.0,sid:1514});
+Data.push({name:'知本',km:547.7,sid:1516});
+Data.push({name:'康樂',km:554.7,sid:1517});
+Data.push({name:'臺東',km:559.3,sid:1632});
+
+
 function renew(form,idx){
     if(form===0){
 	for(var i=0;i<location[idx].length;i++){
