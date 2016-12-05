@@ -14,8 +14,42 @@ location[10]=["六塊厝","屏東","歸來","麟洛","西勢","竹田","潮州",
 location[11]=["古莊","大武","瀧溪","金崙","太麻里","知本","康樂","臺東","山里","鹿野","瑞源","瑞和","關山","海端","池上"];
 location[12]=["富里","東竹","東里","玉里","三民","瑞穗","富源","大富","光復","萬榮","鳳林","南平","豐田","壽豐","平和","志學","吉安","花蓮","北埔","景美","新城","崇德","和仁","和平"];
 location[13]=["石城","大里","大溪 ","龜山","外澳","頭城","頂埔","礁溪","四城","宜蘭 ","二結","中里","羅東","冬山","新馬","蘇澳新站","永樂","東澳","南澳","武塔","漢本"];
+location[14]=["大華","十分","望古","嶺腳","平溪","菁桐"];
+location[15]=["海科館"];
+location[16]=["千甲","新莊","竹中","上員 ","榮華","竹東","橫山","九讚頭","合興","富貴","內灣"];
+location[17]=["源泉","濁水","龍泉","集集","水里","車埕"];
+location[18]=["長榮大學","沙崙"];
 
 var Data=[];
+Data.push({name:'長榮大學',km:2.6,sid:5101,line:'沙崙線'});
+Data.push({name:'沙崙',km:5.3,sid:5102,line:'沙崙線'});
+
+Data.push({name:'源泉',km:2.9,sid:2702,line:'集集線'});
+Data.push({name:'濁水',km:10.8,sid:2703,line:'集集線'});
+Data.push({name:'龍泉',km:15.7,sid:2704,line:'集集線'});
+Data.push({name:'集集',km:20.1,sid:2705,line:'集集線'});
+Data.push({name:'水里',km:27.4,sid:2706,line:'集集線'});
+Data.push({name:'車埕',km:29.7,sid:2707,line:'集集線'});
+
+Data.push({name:'千甲',km:3.6,sid:2212,line:'內灣線'});
+Data.push({name:'新莊',km:6.6,sid:2213,line:'內灣線'});
+Data.push({name:'竹中',km:7.9,sid:2203,line:'內灣線'});
+Data.push({name:'上員',km:10.5,sid:2204,line:'內灣線'});
+Data.push({name:'榮華',km:15.0,sid:2211,line:'內灣線'});
+Data.push({name:'竹東',km:16.6,sid:2205,line:'內灣線'});
+Data.push({name:'橫山',km:20.0,sid:2206,line:'內灣線'});
+Data.push({name:'九讚頭',km:22.2,sid:2207,line:'內灣線'});
+Data.push({name:'合興',km:24.4,sid:2208,line:'內灣線'});
+Data.push({name:'富貴',km:25.7,sid:2209,line:'內灣線'});
+Data.push({name:'內灣',km:27.9,sid:2210,line:'內灣線'});
+
+Data.push({name:'海科館',km:4.2,sid:6103,line:'深澳線'});
+Data.push({name:'大華',km:3.5,sid:1903,line:'平溪線'});
+Data.push({name:'十分',km:6.4,sid:1904,line:'平溪線'});
+Data.push({name:'望古',km:8.2,sid:1905,line:'平溪線'});
+Data.push({name:'嶺腳',km:10.2,sid:1906,line:'平溪線'});
+Data.push({name:'平溪',km:11.2,sid:1907,line:'平溪線'});
+Data.push({name:'菁桐',km:12.9,sid:1908,line:'平溪線'});
 Data.push({name:'基隆',km:3.7,sid:1001,line:'基隆線'});
 Data.push({name:'三坑',km:1.3,sid:1029,line:'基隆線'});
 Data.push({name:'八堵',km:3.7-3.7,sid:1002,line:'環狀線'});
