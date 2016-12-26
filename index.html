@@ -18,12 +18,11 @@ option{
 	
 }
 body{
-	width:1580px;
-	height:700px;
 	text-align: center;
-	background-image: url("台鐵.jpg");
-	background-size:1580px 700px;
 	background-repeat:no-repeat;
+}
+div{
+	float: left;
 }
 </style>
 </HEAD>
@@ -176,8 +175,11 @@ body{
 	<input type="radio" name="timetype" value=2>到達<br>
 </form>
 <input type="button" value="計算票價" onclick="count()"><input id="More" type="button" value="更多設定" onclick="view()"><br>
-<div class="container">            
-  <table class="table table-bordered table-hover">
+<div style="width:90px height:100px">
+a
+</div>
+<div>            
+  <table  style="width:90px height:100px">
     <thead>
       <tr>
         <th>車種</th>
