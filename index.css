@@ -1,0 +1,12 @@
+.menu100{
+	background-image: url(tra2.png);
+	height: 70px;
+	width: 125px;
+	float: left;
+}
+#header {
+	background-image: url(banner.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 150px;
+}
