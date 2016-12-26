@@ -1,0 +1,23 @@
+<!doctype html>
+<head>
+<script>
+function go(url)
+{
+	document.getElementById('webpage').src=url;
+} 
+function testdevice(){
+	 if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    
+}else{
+	location.href="index.html"
+}
+
+}
+</script>
+</head>
+<body onload='testdevice()'>
+ <button onclick="go('tra.html')">臟布基</button> 
+ <button onclick="go('thsrc.html')">蔼臟布基</button> 
+ <button onclick="go()">ゼ</button> 
+<iframe id="webpage" src="tra.html" width="100%" height="90%" frameborder="0"></iframe>
+</body>
