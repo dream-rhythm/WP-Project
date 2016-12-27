@@ -40,3 +40,36 @@ body {
 	background-repeat: repeat-y;
 	background-position: center;
 	}
+#navigation {
+	height: 3em;
+	list-style: none;
+}
+#navigation > li {
+	float: left;
+	height: 100%;
+	padding-top: 0;
+	padding-right: 5px;
+	padding-bottom: 0;
+	padding-left: 5px;
+	margin-right: 5px;
+	width: 91px;
+}
+#navigation > li > a {
+	float: left;
+	height: 100%;
+	color: #0086C9;
+	text-decoration: none;
+	line-height: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: "微軟正黑體", "細明體";
+	text-align: center;
+	width: 91px;
+}
+#navigation > li > a:hover {
+	color: #FFF;
+	background-image: url(image/menuselt.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 38px;
+}
