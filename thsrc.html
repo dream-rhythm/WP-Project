@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <HEAD>    
-	<title>���K�����d��</title>
+	<title>°ªÅK²¼»ù¬d¸ß</title>
 	<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big5">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
   	
@@ -18,75 +18,75 @@ option{
 </style>
 <script>
 function count(){
-	var �_�I��=document.StartStation.start.value;
-	var ���I��=document.EndStation.end.value;
-	var ����=new Array(12);
-	����[0]=new Array('0','205','245','400','560','735','1060','1205','1325','1500','1830',2000');
-	����[1]=new Array('40','0','205','350','510','680','1000','1140','1280','1455','1780','1950');
-	����[2]=new Array('70','40','0','320','470','640','965','1110','1240','1420','1740','1910');
-	����[3]=new Array('200','160','130','0','325','655','805','965','1095','1260','1590','1760');
-        ����[4]=new Array('330','290','260','130','0','325','655','805','925','1110','1430','1600');
-	����[5]=new Array('480','430','400','280','140','0','485','630','760','925','1260','1430');
-	����[6]=new Array('750','700','670','540','410','270','0','320','440','615','940','1110');
-	����[7]=new Array('870','820','790','670','540','390','130','0','295','460','800','965');
-	����[8]=new Array('970','930','900','780','640','500','230','110','0','340','660','830');
-	����[9]=new Array('1120','1080','1050','920','790','640','380','250','150','0','495','655');
-	����[10]=new Array('1390','1350','1320','1190','1060','920','650','530','420','280','0','325');
-	����[11]=new Array('1530','1490','1460','1330','1200','1060','790','670','560','410','140','0');
-	if(�_�I��<���I��){
-		document.getElementById('ticket').innerHTML=����[�_�I��][���I��];
-		document.getElementById('bussiness').innerHTML=����[���I��][�_�I��];
+	var °_ÂI¯¸=document.StartStation.start.value;
+	var ²×ÂI¯¸=document.EndStation.end.value;
+	var ²¼»ù=new Array(12);
+	²¼»ù[0]=new Array('0','205','245','400','560','735','1060','1205','1325','1500','1830','2000');
+	²¼»ù[1]=new Array('40','0','205','350','510','680','1000','1140','1280','1455','1780','1950');
+	²¼»ù[2]=new Array('70','40','0','320','470','640','965','1110','1240','1420','1740','1910');
+	²¼»ù[3]=new Array('200','160','130','0','325','655','805','965','1095','1260','1590','1760');
+        ²¼»ù[4]=new Array('330','290','260','130','0','325','655','805','925','1110','1430','1600');
+	²¼»ù[5]=new Array('480','430','400','280','140','0','485','630','760','925','1260','1430');
+	²¼»ù[6]=new Array('750','700','670','540','410','270','0','320','440','615','940','1110');
+	²¼»ù[7]=new Array('870','820','790','670','540','390','130','0','295','460','800','965');
+	²¼»ù[8]=new Array('970','930','900','780','640','500','230','110','0','340','660','830');
+	²¼»ù[9]=new Array('1120','1080','1050','920','790','640','380','250','150','0','495','655');
+	²¼»ù[10]=new Array('1390','1350','1320','1190','1060','920','650','530','420','280','0','325');
+	²¼»ù[11]=new Array('1530','1490','1460','1330','1200','1060','790','670','560','410','140','0');
+	if(°_ÂI¯¸<²×ÂI¯¸){
+		document.getElementById('ticket').innerHTML=²¼»ù[°_ÂI¯¸][²×ÂI¯¸];
+		document.getElementById('bussiness').innerHTML=²¼»ù[²×ÂI¯¸][°_ÂI¯¸];
 	}
-	else if(�_�I��==���I��) {
+	else if(°_ÂI¯¸==²×ÂI¯¸) {
 		document.getElementById('ticket').innerHTML=0;
 		document.getElementById('bussiness').innerHTML=0;
 	}
 	else{
-		document.getElementById('ticket').innerHTML=����[���I��][�_�I��];
-		document.getElementById('bussiness').innerHTML=����[�_�I��][���I��];
+		document.getElementById('ticket').innerHTML=²¼»ù[²×ÂI¯¸][°_ÂI¯¸];
+		document.getElementById('bussiness').innerHTML=²¼»ù[°_ÂI¯¸][²×ÂI¯¸];
 	}
 }
 </script>
 </HEAD>
 <body onload="count()">
 <form name="StartStation">
-	�_�l��:
+	°_©l¯¸:
 	<select name="start">
-		<option value='0' selected> �n�䯸</option>
-		<option value='1' > �x�_��</option>
-		<option value='2' > �O����</option>
-		<option value='3' > ��鯸</option>
-		<option value='4' > �s�˯�</option>
-		<option value='5' > �]�߯�</option>
-		<option value='6' > �x����</option>
-		<option value='7' > ���Ư�</option>
-		<option value='8' > ���L��</option>
-		<option value='9' > �Ÿq��</option>
-		<option value='10' > �x�n��</option>
-		<option value='11' > ���篸</option>
+		<option value='0' selected> «n´ä¯¸</option>
+		<option value='1' > ¥x¥_¯¸</option>
+		<option value='2' > ªO¾ô¯¸</option>
+		<option value='3' > ®ç¶é¯¸</option>
+		<option value='4' > ·s¦Ë¯¸</option>
+		<option value='5' > ­]®ß¯¸</option>
+		<option value='6' > ¥x¤¤¯¸</option>
+		<option value='7' > ¹ü¤Æ¯¸</option>
+		<option value='8' > ¶³ªL¯¸</option>
+		<option value='9' > ¹Å¸q¯¸</option>
+		<option value='10' > ¥x«n¯¸</option>
+		<option value='11' > ¥ªÀç¯¸</option>
 	</select>
 </form>
 <br>
 <form name="EndStation">
-	���I��:
+	²×ÂI¯¸:
 	<select name="end">
-		<option value='0'> �n�䯸</option>
-		<option value='1' > �x�_��</option>
-		<option value='2' > �O����</option>
-		<option value='3' > ��鯸</option>
-		<option value='4' > �s�˯�</option>
-		<option value='5' > �]�߯�</option>
-		<option value='6' > �x����</option>
-		<option value='7' > ���Ư�</option>
-		<option value='8' > ���L��</option>
-		<option value='9'  selected> �Ÿq��</option>
-		<option value='10' > �x�n��</option>
-		<option value='11' > ���篸</option>
+		<option value='0'> «n´ä¯¸</option>
+		<option value='1' > ¥x¥_¯¸</option>
+		<option value='2' > ªO¾ô¯¸</option>
+		<option value='3' > ®ç¶é¯¸</option>
+		<option value='4' > ·s¦Ë¯¸</option>
+		<option value='5' > ­]®ß¯¸</option>
+		<option value='6' > ¥x¤¤¯¸</option>
+		<option value='7' > ¹ü¤Æ¯¸</option>
+		<option value='8' > ¶³ªL¯¸</option>
+		<option value='9'  selected> ¹Å¸q¯¸</option>
+		<option value='10' > ¥x«n¯¸</option>
+		<option value='11' > ¥ªÀç¯¸</option>
 	</select>
 </form>
 <br>
-<input type="button" value="�d�߲���" onclick="count()"><br>
-�зǿ�����<lable id='ticket'>0</lable>��<br>
-�Ӱȿ�����<lable id='bussiness'>0</lable>��
+<input type="button" value="¬d¸ß²¼»ù" onclick="count()"><br>
+¼Ð·Ç¿µ²¼»ù<lable id='ticket'>0</lable>¤¸<br>
+°Ó°È¿µ²¼»ù<lable id='bussiness'>0</lable>¤¸
 </body>
 </html>
