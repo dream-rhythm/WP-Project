@@ -1,8 +1,8 @@
-
+ï»¿
 <!doctype html>
 <html>
 <HEAD>    
-	<title>«È¹B²¼»ù¬d¸ß</title>
+	<title>å®¢é‹ç¥¨åƒ¹æŸ¥è©¢</title>
 	<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big5">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
   	
@@ -18,62 +18,62 @@ option{
 </style>
 <script>
 function count(){
-	var °_ÂI¯¸=document.StartStation.start.value;
-	var ²×ÂI¯¸=document.EndStation.end.value;
-	var ²¼»ù=new Array(8);
-	²¼»ù[0]=new Array('0','150','260','300','350','400','530','570');
-	²¼»ù[1]=new Array('150','0','0','0','0','0','0','0');
-	²¼»ù[2]=new Array('260','0','0','0','0','180','310','0');
-	²¼»ù[3]=new Array('300','0','0','0','0','0','0','0');
-        ²¼»ù[4]=new Array('350','0','0','0','0','0','0','0');
-	²¼»ù[5]=new Array('400','0','180','0','0','0','0','0');
-	²¼»ù[6]=new Array('530','0','310','0','0','0','0','0');
-	²¼»ù[7]=new Array('570','0','0','0','0','0','0','0');
-	if(°_ÂI¯¸<²×ÂI¯¸){
-		document.getElementById('ticket').innerHTML=²¼»ù[°_ÂI¯¸][²×ÂI¯¸];
-		document.getElementById('bussiness').innerHTML=²¼»ù[²×ÂI¯¸][°_ÂI¯¸];
+	var èµ·é»ç«™=document.StartStation.start.value;
+	var çµ‚é»ç«™=document.EndStation.end.value;
+	var ç¥¨åƒ¹=new Array(8);
+	ç¥¨åƒ¹[0]=new Array('0','150','260','300','350','400','530','570');
+	ç¥¨åƒ¹[1]=new Array('150','0','0','0','0','0','0','0');
+	ç¥¨åƒ¹[2]=new Array('260','0','0','0','0','180','310','0');
+	ç¥¨åƒ¹[3]=new Array('300','0','0','0','0','0','0','0');
+        ç¥¨åƒ¹[4]=new Array('350','0','0','0','0','0','0','0');
+	ç¥¨åƒ¹[5]=new Array('400','0','180','0','0','0','0','0');
+	ç¥¨åƒ¹[6]=new Array('530','0','310','0','0','0','0','0');
+	ç¥¨åƒ¹[7]=new Array('570','0','0','0','0','0','0','0');
+	if(èµ·é»ç«™<çµ‚é»ç«™){
+		document.getElementById('ticket').innerHTML=ç¥¨åƒ¹[èµ·é»ç«™][çµ‚é»ç«™];
+		document.getElementById('bussiness').innerHTML=ç¥¨åƒ¹[çµ‚é»ç«™][èµ·é»ç«™];
 	}
-	else if(°_ÂI¯¸==²×ÂI¯¸) {
+	else if(èµ·é»ç«™==çµ‚é»ç«™) {
 		document.getElementById('ticket').innerHTML=0;
 		document.getElementById('bussiness').innerHTML=0;
 	}
 	else{
-		document.getElementById('ticket').innerHTML=²¼»ù[²×ÂI¯¸][°_ÂI¯¸];
-		document.getElementById('bussiness').innerHTML=²¼»ù[°_ÂI¯¸][²×ÂI¯¸];
+		document.getElementById('ticket').innerHTML=ç¥¨åƒ¹[çµ‚é»ç«™][èµ·é»ç«™];
+		document.getElementById('bussiness').innerHTML=ç¥¨åƒ¹[èµ·é»ç«™][çµ‚é»ç«™];
 	}
 }
 </script>
 </HEAD>
 <body onload="count()">
 <form name="StartStation">
-	°_©l¯¸:
+	èµ·å§‹ç«™:
 	<select name="start">
-		<option value='0' selected> ¥x¥_¯¸</option>
-		<option value='1' > ­]®ß¯¸</option>
-		<option value='2' > ¥x¤¤¯¸</option>
-		<option value='3' > ¹ü¤Æ¯¸</option>
-		<option value='4' > ¹Å¸q¯¸</option>
-		<option value='5' > ¥x«n¯¸</option>
-		<option value='6' > °ª¶¯¯¸</option>
-		<option value='7' > «ÌªF¯¸</option>
+		<option value='0' selected> å°åŒ—ç«™</option>
+		<option value='1' > è‹—æ —ç«™</option>
+		<option value='2' > å°ä¸­ç«™</option>
+		<option value='3' > å½°åŒ–ç«™</option>
+		<option value='4' > å˜‰ç¾©ç«™</option>
+		<option value='5' > å°å—ç«™</option>
+		<option value='6' > é«˜é›„ç«™</option>
+		<option value='7' > å±æ±ç«™</option>
 	</select>
 </form>
 <br>
 <form name="EndStation">
-	²×ÂI¯¸:
+	çµ‚é»ç«™:
 	<select name="end">
-		<option value='0' selected> ¥x¥_¯¸</option>
-		<option value='1' > ­]®ß¯¸</option>
-		<option value='2' > ¥x¤¤¯¸</option>
-		<option value='3' > ¹ü¤Æ¯¸</option>
-		<option value='4' > ¹Å¸q¯¸</option>
-		<option value='5' > ¥x«n¯¸</option>
-		<option value='6' > °ª¶¯¯¸</option>
-		<option value='7' > «ÌªF¯¸</option>
+		<option value='0' selected> å°åŒ—ç«™</option>
+		<option value='1' > è‹—æ —ç«™</option>
+		<option value='2' > å°ä¸­ç«™</option>
+		<option value='3' > å½°åŒ–ç«™</option>
+		<option value='4' > å˜‰ç¾©ç«™</option>
+		<option value='5' > å°å—ç«™</option>
+		<option value='6' > é«˜é›„ç«™</option>
+		<option value='7' > å±æ±ç«™</option>
 	</select>
 </form>
 <br>
-<input type="button" value="¬d¸ß²¼»ù" onclick="count()"><br>
-²¼»ù<lable>0</lable>¤¸<br>
+<input type="button" value="æŸ¥è©¢ç¥¨åƒ¹" onclick="count()"><br>
+ç¥¨åƒ¹<lable>0</lable>å…ƒ<br>
 </body>
 </html>
