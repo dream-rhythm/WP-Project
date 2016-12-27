@@ -1,0 +1,79 @@
+
+<!doctype html>
+<html>
+<HEAD>    
+	<title>客運票價查詢</title>
+	<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big5">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+  	
+<style>
+select{
+	color: green;
+}
+option{
+	color: navy;
+	
+}
+
+</style>
+<script>
+function count(){
+	var 起點站=document.StartStation.start.value;
+	var 終點站=document.EndStation.end.value;
+	var 票價=new Array(8);
+	票價[0]=new Array('0','150','260','300','350','400','530','570');
+	票價[1]=new Array('150','0','0','0','0','0','0','0');
+	票價[2]=new Array('260','0','0','0','0','180','310','0');
+	票價[3]=new Array('300','0','0','0','0','0','0','0');
+        票價[4]=new Array('350','0','0','0','0','0','0','0');
+	票價[5]=new Array('400','0','180','0','0','0','0','0');
+	票價[6]=new Array('530','0','310','0','0','0','0','0');
+	票價[7]=new Array('570','0','0','0','0','0','0','0');
+	if(起點站<終點站){
+		document.getElementById('ticket').innerHTML=票價[起點站][終點站];
+		document.getElementById('bussiness').innerHTML=票價[終點站][起點站];
+	}
+	else if(起點站==終點站) {
+		document.getElementById('ticket').innerHTML=0;
+		document.getElementById('bussiness').innerHTML=0;
+	}
+	else{
+		document.getElementById('ticket').innerHTML=票價[終點站][起點站];
+		document.getElementById('bussiness').innerHTML=票價[起點站][終點站];
+	}
+}
+</script>
+</HEAD>
+<body onload="count()">
+<form name="StartStation">
+	起始站:
+	<select name="start">
+		<option value='0' selected> 台北站</option>
+		<option value='1' > 苗栗站</option>
+		<option value='2' > 台中站</option>
+		<option value='3' > 彰化站</option>
+		<option value='4' > 嘉義站</option>
+		<option value='5' > 台南站</option>
+		<option value='6' > 高雄站</option>
+		<option value='7' > 屏東站</option>
+	</select>
+</form>
+<br>
+<form name="EndStation">
+	終點站:
+	<select name="end">
+		<option value='0' selected> 台北站</option>
+		<option value='1' > 苗栗站</option>
+		<option value='2' > 台中站</option>
+		<option value='3' > 彰化站</option>
+		<option value='4' > 嘉義站</option>
+		<option value='5' > 台南站</option>
+		<option value='6' > 高雄站</option>
+		<option value='7' > 屏東站</option>
+	</select>
+</form>
+<br>
+<input type="button" value="查詢票價" onclick="count()"><br>
+票價<lable>0</lable>元<br>
+</body>
+</html>
