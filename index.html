@@ -203,7 +203,64 @@ option{
 
 <iframe id="tratime" width="833" height="540"style='display:none;'  src="" frameborder="0"></iframe>
 
+<<<<<<< HEAD
 </body>
 
 
 </html>
+=======
+<html>
+<head>
+<title>
+	 票價查詢
+</title>
+<link href="index.css" rel="stylesheet" type="text/css" />  
+
+<script>
+
+	function go(url){
+		document.getElementById('webpage').src=url;
+	}    
+	function testdevice(){
+		if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    			location.href="index2.html"
+		}
+	}
+	function a(){
+		testdevice()
+		window.setTimeout("a();",500);
+	}
+a()
+testdevice()
+
+</script>
+</head>
+<body onload="testdevice()">
+        <div id="wrapper" none="true">
+            <div id="header" _height="none"></div> <!--header end-->
+            
+            <div id="menu" _height="none">
+              <div class="menu100"></div>
+              <div id="ChangeMenus" class="menu02">
+		<ul id="navigation">
+		   <li><a href="#" name="MenuTarget" onclick="go('html/tra.html')">台鐵票價</a></li>
+		
+
+		
+
+		   <li><a href="#" onclick="go('html/thsrc.html')">高鐵票價</a></li>
+		   <li><a href="#" onclick="go('html/87.html')">客運票價</a></li>
+		 </ul>
+              
+            </div><!--menu end-->
+        
+        
+            <div id="content" _height="100%" style="min-height: 500px;">
+              	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<iframe id="webpage" src="html/tra.html" width="83%" height="600px" frameborder="0"></iframe>
+            </div>
+			
+        </div><!--wrapper end-->      
+</body>
+</html>
+>>>>>>> origin/master
