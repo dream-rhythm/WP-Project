@@ -1,12 +1,42 @@
 .menu100{
-	background-image: url(tra2.png);
+	background-image: url(image/tra2.png);
 	height: 70px;
 	width: 125px;
 	float: left;
 }
 #header {
-	background-image: url(banner.png);
+	background-image: url(image/banner.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 150px;
 }
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(image/bannerbg.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+#wrapper{
+	width: 1050px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#menu{
+	height: 70px;
+	margin-top: -30px;
+}
+.menu02{
+	background-image: url(image/menubg_02.png);
+	float: left;
+	height: 70px;
+	width: 840px;
+}
+#content{
+	background-image: url(image/contentbg.png);
+	background-repeat: repeat-y;
+	background-position: center;
+	}
