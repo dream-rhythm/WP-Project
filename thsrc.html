@@ -1,0 +1,73 @@
+
+<!doctype html>
+<html>
+<HEAD>    
+	<title>高鐵票價查詢</title>
+	<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big5">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+select{
+	color: green;
+}
+option{
+	color: navy;
+	
+}
+
+</style>
+<script>
+function count(){
+	var 起點站=document.StartStation.start.value;
+	var 終點站=document.EndStation.end.value;
+	var 票價=new Array(12);
+	票價[0]=new Array('0','40','70','200','330','480','750','870','970','1120','1390','1530');
+	票價[1]=new Array('40','0','40','160','290','430','700','820','930','1080','1350','1490');
+	票價[2]=new Array('70','40','0','130','260','400','670','790','900','1050','1320','1460');
+	票價[3]=new Array('200','160','130','0','130','280','540','670','780','920','1190','1330');
+	document.getElementById('ticket').innerHTML=票價[起點站][終點站]
+}
+</script>
+</HEAD>
+<body>
+<form name="StartStation">
+	起始站:
+	<select name="start">
+		<option value='0' selected> 南港站</option>
+		<option value='1' > 台北站</option>
+		<option value='2' > 板橋站</option>
+		<option value='3' > 桃園站</option>
+		<option value='4' > 新竹站</option>
+		<option value='5' > 苗栗站</option>
+		<option value='6' > 台中站</option>
+		<option value='7' > 彰化站</option>
+		<option value='8' > 雲林站</option>
+		<option value='9' > 嘉義站</option>
+		<option value='10' > 台南站</option>
+		<option value='11' > 左營站</option>
+	</select>
+</form>
+<br>
+<form name="EndStation">
+	終點站:
+	<select name="end">
+		<option value='0' selected> 南港站</option>
+		<option value='1' > 台北站</option>
+		<option value='2' > 板橋站</option>
+		<option value='3' > 桃園站</option>
+		<option value='4' > 新竹站</option>
+		<option value='5' > 苗栗站</option>
+		<option value='6' > 台中站</option>
+		<option value='7' > 彰化站</option>
+		<option value='8' > 雲林站</option>
+		<option value='9' > 嘉義站</option>
+		<option value='10' > 台南站</option>
+		<option value='11' > 左營站</option>
+	</select>
+</form>
+<br>
+<input type="button" value="查詢票價" onclick="count()"><br>
+票價<lable id='ticket'>0</lable>元
+</body>
