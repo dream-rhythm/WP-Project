@@ -1,23 +1,27 @@
-<!doctype html>
+ï»¿<!doctype html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 <script>
-function go(url)
-{
-	document.getElementById('webpage').src=url;
-} 
-function testdevice(){
-	 if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	function go(url){
+		document.getElementById('webpage').src=url;
+	} 
+	function testdevice(){
+	 	if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     
-}else{
-	location.href="index.html"
-}
+		}
+		else location.href="index.html";
+	}
+	function a(){
+		testdevice()
+		window.setTimeout("a();",500);
+	}
+a()	
 testdevice()
-}
 </script>
 </head>
 <body onload='testdevice()'>
- <button onclick="go('tra.html')">¥xÅK²¼»ù</button> 
- <button onclick="go('thsrc.html')">°ªÅK²¼»ù</button> 
- <button onclick="go()">¥¼ª¾¦W</button> 
-<iframe id="webpage" src="tra.html" width="100%" height="90%" frameborder="0"></iframe>
+ <button onclick="go('html/tra.html')">å°éµç¥¨åƒ¹</button> 
+ <button onclick="go('html/thsrc.html')">é«˜éµç¥¨åƒ¹</button> 
+ <button onclick="go()">æœªçŸ¥å</button> 
+<iframe id="webpage" src="html/tra.html" width="100%" height="500px" frameborder="0"></iframe>
 </body>

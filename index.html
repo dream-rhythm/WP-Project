@@ -16,9 +16,15 @@
 	}    
 	function testdevice(){
 		if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    			location.href="tra.html"
+    			location.href="index2.html"
 		}
 	}
+	function a(){
+		testdevice()
+		window.setTimeout("a();",500);
+	}
+a()
+testdevice()
 
 </script>
 </head>
