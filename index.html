@@ -1,4 +1,4 @@
-
+﻿
 
 <!DOCTYPE html>
 
@@ -19,7 +19,12 @@
     			location.href="index2.html"
 		}
 	}
-testdevice()
+	function check(){
+		testdevice()
+		setTimeout("check()", 100);
+	}
+
+	check()
 
 </script>
 </head>

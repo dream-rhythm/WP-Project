@@ -11,7 +11,11 @@
 		}
 		else location.href="index.html";
 	}
-testdevice()
+	function check(){
+		testdevice()
+		setTimeout("check()", 100);
+	}
+	check()
 </script>
 </head>
 <body onload='testdevice()'>
