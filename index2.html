@@ -1,52 +1,35 @@
-<<<<<<< HEAD
-<!doctype html>
-<head>
-<script>
-function go(url)
-{
-	document.getElementById('webpage').src=url;
-} 
-function testdevice(){
-	 if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    
-}else{
-	location.href="index.html"
-}
-testdevice()
-}
-</script>
-</head>
-<body onload='testdevice()'>
- <button onclick="go('tra.html')">�x�K����</button> 
- <button onclick="go('thsrc.html')">���K����</button> 
- <button onclick="go('87.html')">�ȹB����</button> 
-<iframe id="webpage" src="tra.html" width="100%" height="90%" frameborder="0"></iframe>
-=======
-﻿<!doctype html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-<script>
-	function go(url){
-		document.getElementById('webpage').src=url;
-	} 
-	function testdevice(){
-	 	if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    
-		}
-		else location.href="index.html";
-	}
-	function a(){
-		testdevice()
-		window.setTimeout("a();",500);
-	}
-a()	
-testdevice()
-</script>
-</head>
-<body onload='testdevice()'>
- <button onclick="go('html/tra.html')">台鐵票價</button> 
- <button onclick="go('html/thsrc.html')">高鐵票價</button> 
- <button onclick="go()">未知名</button> 
-<iframe id="webpage" src="html/tra.html" width="100%" height="500px" frameborder="0"></iframe>
->>>>>>> origin/master
-</body>
+﻿<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="NewErrorPageTemplate.css" >
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>無法顯示此網頁</title>
+
+        <script src="errorPageStrings.js" language="javascript" type="text/javascript">
+        </script>
+        <script src="httpErrorPagesScripts.js" language="javascript" type="text/javascript">
+        </script>
+    </head>
+
+    <body onLoad="javascript:getInfo();">
+        <div id="contentContainer" class="mainContent">
+            <div id="mainTitle" class="title">無法顯示此網頁</div>
+            <div class="taskSection" id="taskSection">
+                <ul id="cantDisplayTasks" class="tasks">
+                    <li id="task1-1">請確定網址 <span id="webpage" class="webpageURL"></span> 是正確的。</li>
+                    <li id="task1-2">使用您的搜尋引擎尋找網頁。</li>
+                    <li id="task1-3">在幾分鐘後重新整理網頁。</li>
+                </ul>
+                <ul id="notConnectedTasks" class="tasks" style="display:none">
+                    <li id="task2-1">檢查確定所有網路線都有插好。</li>
+                    <li id="task2-2">確認飛航模式已關閉。</li>
+                    <li id="task2-3">確定您的無線交換器已開啟。</li>
+                    <li id="task2-4">查看您是否能夠連線到行動寬頻。</li>
+                    <li id="task2-5">重新啟動您的路由器。</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
